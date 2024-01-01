@@ -2,26 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.link {
+    @apply my-0 mx-8 text-textColor hover:text-secundaryColor md:text-2xl;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.nav{
+    @apply md:fixed md:top-0 md:left-0 md:h-full md:w-full md:flex md:flex-col md:justify-center md:items-center md:gap-6 md:bg-mainColor md:duration-[.6s] md:translate-y-[-100vh];
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn{
+    @apply p-1 cursor-pointer bg-transparent border-none outline-none text-textColor hidden opacity-0 text-3xl md:block md:opacity-100;  
+}
+
+.texto{
+    @apply text-red-700 text-3xl;
 }
