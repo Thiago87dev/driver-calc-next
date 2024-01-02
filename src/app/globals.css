@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Pacifico';
+    src: url('/fonts/Pacifico-Regular.ttf');
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    
+    background-color: #ffff00;
+    
+    /* Outras propriedades de estilo conforme necessário */
+  }
+
 .link {
     @apply my-0 mx-8 text-textColor hover:text-secundaryColor md:text-2xl;
 }

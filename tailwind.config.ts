@@ -8,10 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        'pacifico':['Pacifico', 'cursive'],
+      },
       colors:{
         mainColor: '#29335c',
         mainColorLight: '#5767aa',
-        secundaryColor: '#db2b39',
+        secundaryColor: '#ffff00',
         textColor:'#eee',
       },
       screens: {
