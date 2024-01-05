@@ -1,6 +1,11 @@
 import Image from "next/image";
 import bgImage from "../../public/img/audi.jpg";
 import DriverCalc from "./DriverCalc";
+import CalcResult from "./CalcResult";
+import KmPorLitro from "./KmPorLitro";
+import KmPorLitroResult from "./KmPorLitroResult";
+import DescontoCombustivel from "./DescontoCombustivel";
+import DescontoCombustivelResult from "./DescontoCombustivelResult";
 
 export default function Hero() {
   return (
@@ -13,10 +18,10 @@ export default function Hero() {
               alt="audi"
               className="w-screen h-screen md:hidden "
               width={1000}
-              height={100}
+              height={1000}
             />
           </div>
-          <h1 className="text-8xl text-white text-center font-bold mt-10 xl:text-6xl ">
+          <h1 className="text-7xl text-white text-center font-bold mt-6 xl:text-6xl ">
             Calculadora de ganhos para motoristas de app
           </h1>
           <p className="text-center font-bold text-xl w-4/5 md:text-white">
@@ -31,9 +36,24 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className=" h-screen">
-        <div className="w-2/5 mx-3">
+      <div className=" flex justify-center items-center h-screen">
+        <div className="w-2/5 mx-5">
           <DriverCalc />
+        </div>
+        <div className="w-2/5 mx-5">
+          <CalcResult />
+        </div>
+      </div>
+      <div className=" flex justify-around h-screen bg-mainColorLight flex-col">
+        <div className="flex justify-center w-full">
+          <div className="flex flex-col justify-center items-center w-full mx-5">
+            <KmPorLitro />
+          </div>
+        </div>
+        <div className="flex justify-center w-full">
+          <div className="flex flex-col justify-center items-center w-full mx-5">
+            <DescontoCombustivel />
+          </div>
         </div>
       </div>
     </>
